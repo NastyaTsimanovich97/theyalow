@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header{
+    display: grid;
+    height: 150px;
+    grid-template-areas: "logo h1 nav";
+    grid-template-columns: 1fr 2fr 3fr;
+    align-content: center;
+}
+h1{
+    grid-area: h1;
+    padding-top: 4%;
+    padding-left: 2%;
+    font-size: 41px;
+    letter-spacing: 0px;
+    font-family: "Lucida Sans";
+    font-style: italic;
+}
+.logo{
+    grid-area: logo;
+    justify-self: end;
+    background-image: url("./assets/images/Shape\ 8\ copy\ 4.svg");
+    background-repeat: no-repeat;
+    background-size: 79px; 
+    background-position-x: 3px;
+}
+.navigation-menu{
+    grid-area: nav;
+    display: grid;
+    grid-template-areas: "nav-about-us nav-services nav-contact";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    width: 70%;
+    height: 46%;
+    margin-top: 6%;
+    margin-left: 8.6%;
+    background: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+}
+.rectangle-shadow-1{
+    position: relative;
+    bottom: 52%;
+    left: 7.5%;
+    width: 70%;
+    height: 46%;
+    background: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    opacity: .27;
+}
+.rectangle-shadow-2{
+    position: relative;
+    bottom: 102.5%;
+    left: 6.5%;
+    width: 70%;
+    height: 46%;
+    background: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    opacity: .27;
+}
+.navigation-menu li{
+    display: inline;
+    text-decoration:none;
+    list-style: none;
+    padding-top: 4%;
+}
+.navigation-menu a{
+    font-size: 1em;
+    letter-spacing: 0px;
+    font-family: "Segoe WP";
+    color: #9b7d08;
+}
+.nav-about-us{
+    grid-area: nav-about-us;
+    text-align: center;
+    width: 100%;
+    border-right: 1px solid #B99403;
+}
+.nav-services{
+    grid-area: nav-services;
+    width: 80%;
+    padding-left: 15%;
+    border-right: 1px solid #B99403;
+}
+.nav-contact{
+    grid-area: nav-contact;
+    justify-self: center;
+    width: 100%;
+}
+
+.icon-user,
+.icon-wrench,
+.icon-email{
+    color: #b99403;
+}
+
+
+
+
+
+
+
+
+
+
+
+.player{
+    grid-area: player;
+}
+.left-control{
+    grid-area: left-control;
+}
+.right-control{
+    grid-area: right-control;
+}
+
+.links{
+    grid-area: links;
+}
+
+.twitter-publication{
+    grid-area: twitter-publication;
+}
+
+.other-devices{
+    grid-area: other-devices;
+}
+
+footer{
+    grid-area: footer;
+}
