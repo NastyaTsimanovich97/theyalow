@@ -11,8 +11,13 @@ body{
     margin: 0 auto;
 }
 
+
 header{
+    position: absolute;
+    z-index: 2;
     display: grid;
+    width: 100%;
+    max-width: 1300px;
     height: 150px;
     grid-template-areas: "logo h1 nav";
     grid-template-columns: 1fr 2fr 3fr;
@@ -107,18 +112,17 @@ nav:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
 .player{
+    z-index: 1;
     grid-area: player;
+    height: 560px;
+    background-image: url("./assets/images/Layer\ 20@1X.png");
+    background-size: cover;
 }
+video[poster]{
+    object-fit: cover;
+}
+
 .left-control{
     grid-area: left-control;
 }
