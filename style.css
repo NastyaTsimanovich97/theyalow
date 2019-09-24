@@ -20,12 +20,12 @@ header{
 }
 h1{
     grid-area: h1;
-    padding-top: 4%;
+    padding-top: 4.3%;
     padding-left: 2%;
-    font-size: 41px;
-    letter-spacing: 0px;
-    font-family: "Lucida Sans";
+    font-size: 244%;
+    font-family: "Lucida Sans", sans-serif;
     font-style: italic;
+    color: #ffffff;
 }
 .logo{
     grid-area: logo;
@@ -36,6 +36,9 @@ h1{
     background-position-x: 3px;
 }
 .navigation-menu{
+    position: relative;
+    bottom: 64%;
+    left: 8.6%;
     grid-area: nav;
     display: grid;
     grid-template-areas: "nav-about-us nav-services nav-contact";
@@ -43,27 +46,25 @@ h1{
     grid-template-rows: 100%;
     width: 70%;
     height: 46%;
-    margin-top: 6%;
-    margin-left: 8.6%;
     background: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
 }
 .rectangle-shadow-1{
     position: relative;
-    bottom: 52%;
+    top: 19%;
     left: 7.5%;
     width: 70%;
     height: 46%;
-    background: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    background: linear-gradient(0deg, #f5c505 0%, #f5c505 100%); 
     opacity: .27;
 }
 .rectangle-shadow-2{
     position: relative;
-    bottom: 102.5%;
+    bottom: 34.5%;
     left: 6.5%;
     width: 70%;
     height: 46%;
     background: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
-    opacity: .27;
+    opacity: .27; 
 }
 .navigation-menu li{
     display: inline;
@@ -74,7 +75,7 @@ h1{
 .navigation-menu a{
     font-size: 1em;
     letter-spacing: 0px;
-    font-family: "Segoe WP";
+    font-family: "Segoe WP", sans-serif;
     color: #9b7d08;
 }
 .nav-about-us{
@@ -94,7 +95,11 @@ h1{
     justify-self: center;
     width: 100%;
 }
-
+nav:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.2);
+}
 .icon-user,
 .icon-wrench,
 .icon-email{
