@@ -354,7 +354,6 @@ h2{
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-weight: 700;
 }
-
 .text-devices{
     grid-area: list-dev;
     width: 88%;
@@ -375,5 +374,30 @@ h2{
 
 
 footer{
-    
+    display: grid;
+    grid-template-areas: " logo-footer header-footer";
+    grid-template-columns: 1fr 5.7fr;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background-image: url("./assets/images/Layer\ 32.png");
+    -webkit-box-shadow: 0px -3px 9px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -3px 9px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px -3px 9px 5px rgba(0,0,0,0.75);
+}
+.logo-footer{
+    grid-area: logo-footer;
+    background-image: url("./assets/images/Shape\ 8\ copy\ 4.svg");
+    background-size: contain;
+    justify-self: end;
+
+}
+h6{
+    grid-area: header-footer;
+    font-size: 205%;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
 }
