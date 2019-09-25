@@ -325,23 +325,28 @@ h2{
 }
 .images-devices{
     grid-area: images-dev;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 14%;
+    padding-right: 5%;
 }
 .device-dekstop{
-    padding-bottom: 10%;
-    padding-left: 5%;
+    
 }
 .device-tablet{
-    padding-bottom: 17%;
-    padding-left: 15px;
-    padding-right: 15px;
+    position: relative;
+    bottom: 11%;
+    padding-left: 3%;
+    padding-right: 4%;
 }
 .device-phone{
-    padding-bottom: 17%;
+    position: relative;
+    bottom: 11%;
 }
 .circle-devices{
-    position: absolute;
-    left: 137px;
-    top: 188%;
+    position: relative;
+    bottom: 47%;
+    left: 16%;
     width: 116px;
     height: 116px;
     border-radius: 58px;
@@ -357,7 +362,7 @@ h2{
 .text-devices{
     grid-area: list-dev;
     width: 88%;
-    padding-top: 7%;
+    padding-top: 12%;
     padding-right: 5%;
     font-size: 148%;
     line-height: 172%;
