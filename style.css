@@ -176,13 +176,16 @@ video[poster]{
 
 
 .twitter-publication{
-   width: 100%;
-   height: 510px;
-   display: grid;
-   grid-template-rows: 22% 70% 8%;
-   grid-template-areas: "h2" "twits" "scroll";
-   background-image: url("./assets/images/Layer\ 10\ copy\ 3.png");
-   background-size: cover;
+    width: 100%;
+    height: 510px;
+    display: grid;
+    grid-template-rows: 22% 70% 8%;
+    grid-template-areas: "h2" "twits" "scroll";
+    background-image: url("./assets/images/Layer\ 10\ copy\ 3.png");
+    background-size: cover;
+    -webkit-box-shadow: inset 0px 12px 16px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 12px 16px -13px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 12px 16px -13px rgba(0,0,0,0.75);
 }
 h2{
     padding-top: 2.2%;
@@ -305,9 +308,72 @@ h2{
 
 
 .other-devices{
-    grid-area: other-devices;
+    display: grid;
+    grid-template-areas: "head-dev head-dev" "images-dev list-dev";
+    grid-template-columns: 1.5fr 1fr;
+    justify-items: center;
+    width: 100%;
+    height: 500px;
+    background-image: url(./assets/images/Layer\ 32.png);
+}
+.header-devices{
+    grid-area: head-dev;
+    padding-right: 8.3%;
+    padding-top: 2.5%;
+    font-size: 275%;
+    color: #f5c506;
+}
+.images-devices{
+    grid-area: images-dev;
+}
+.device-dekstop{
+    padding-bottom: 10%;
+    padding-left: 5%;
+}
+.device-tablet{
+    padding-bottom: 17%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.device-phone{
+    padding-bottom: 17%;
+}
+.circle-devices{
+    position: absolute;
+    left: 137px;
+    top: 188%;
+    width: 116px;
+    height: 116px;
+    border-radius: 58px;
+    background-color: #f5c506;
+}
+.circle-devices pre{
+    padding-top: 38%;
+    font-size: 108%;
+    color: #ffffff;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-weight: 700;
 }
 
+.text-devices{
+    grid-area: list-dev;
+    width: 88%;
+    padding-top: 7%;
+    padding-right: 5%;
+    font-size: 148%;
+    line-height: 172%;
+    color: #a9a9a7;
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-weight: 400;
+}
+.list-devices {
+    list-style-image: url("./assets/images/Ellipse\ 4.svg");
+}
+.list-devices li {
+    padding-left: 10px;
+}
+
+
 footer{
-    grid-area: footer;
+    
 }
