@@ -114,7 +114,6 @@ nav:hover{
 
 .player{
     z-index: 1;
-    grid-area: player;
     height: 563px;
     background-image: url("./assets/images/Layer\ 20@1X.png");
     background-size: cover;
@@ -127,7 +126,6 @@ video[poster]{
 .links{
     display: flex;
     justify-content: center;
-    grid-area: links;
     width: 100%;
     height: 215px;
     background-image: url("./assets/images/Layer\ 7@1X.png");
@@ -177,10 +175,49 @@ video[poster]{
 }
 
 
-
 .twitter-publication{
-    grid-area: twitter-publication;
+   width: 100%;
+   height: 510px;
+   background-image: url("./assets/images/Layer\ 10\ copy\ 3.png");
+   background-size: cover;
 }
+.slidecontainer {
+    width: 895px;
+}
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 895px; 
+    height: 15px; 
+    border-radius: 20px;
+    background-color: #ffffff;
+    outline: none;
+    opacity: 0.48; 
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 197px; 
+    height: 15px; 
+    background:#ec9e03; 
+    border-radius: 20px;
+    cursor: pointer; 
+}
+.slider::-moz-range-thumb {
+    width: 197px; 
+    height: 15px; 
+    background:#ec9e03; 
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 
 .other-devices{
     grid-area: other-devices;
