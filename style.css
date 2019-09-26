@@ -295,7 +295,7 @@ h2{
 .scroll:hover {
     opacity: 1; /* Fully shown on mouse-over */
 }
-.scroll::-webkit-scroll-thumb {
+.scroll::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 197px; 
