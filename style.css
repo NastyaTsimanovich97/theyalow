@@ -120,11 +120,48 @@ nav:hover{
     background-image: url("./assets/images/Layer\ 20@1X.png");
     background-size: cover;
 }
-.all{
-    padding-top: 3%;
+.slide{
+    display: grid;
+    grid-template-areas: "video text";
+    align-items: center; 
+}
+.player-video{
+    grid-area: video;
+}
+.player-text{
+    grid-area: text;
+    width: 31vw;
+    padding-bottom: 9%;
+    padding-left: 6%;
+    font-size: 400%;
+    line-height: 117%;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    overflow-wrap: break-word;
+}
+.player-text span{
+    color: #f5c506;
 }
 video[poster]{
     object-fit: cover;
+}
+.all{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:1170px){
+    .player-text{
+        font-size: 4vw;
+        padding-left: 0;
+    }
+
+    .player-video{
+        width: 50vw;
+    }
 }
 
 
@@ -312,6 +349,10 @@ h2{
     cursor: pointer;
 }
 
+@media only screen and (max-width:1060px){
+    
+}
+
 
 .other-devices{
     display: grid;
@@ -320,7 +361,7 @@ h2{
     justify-items: center;
     width: 100%;
     height: 500px;
-    background-image: url(./assets/images/Layer\ 32.png);
+    background-image: url("./assets/images/Layer\ 32.png");
 }
 .header-devices{
     grid-area: head-dev;

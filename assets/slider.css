@@ -1,33 +1,3 @@
-.slide{
-    display: grid;
-    grid-template-areas: "video text";
-    align-items: center;
-    
-}
-.player-video{
-    grid-area: video;
-}
-.player-text{
-    grid-area: text;
-    width: 160%;
-    padding-bottom: 9%;
-    padding-left: 6%;
-    font-size: 400%;
-    line-height: 117%;
-    font-family: 'Asap', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    color: #ffffff;
-}
-.player-text span{
-    color: #f5c506;
-}
-
-#slider {
-    padding-top: 13%;
-    text-align: center;
-}
-
 #slider{
 	margin: 0 auto;
 }
@@ -43,12 +13,14 @@
 }
 
 #overflow{ 
+    position: relative;
+    bottom: 1.5vw;
 	width: 100%;
 	overflow: hidden;
 }
 
 #desktop:checked ~ #slider{ 
-    max-width: 1000px; 
+    width: 76.9%;
 }
 
 
@@ -57,7 +29,7 @@
 #switch1:checked ~ #controls label:nth-child(3), 
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2){
-    background: url('./images/2.png') no-repeat; /*заливка фона картинкой без повторений*/
+    background: url('./images/2.png') no-repeat; 
     float: left;
 	margin-left: -15%;
 	display: block;
@@ -69,14 +41,13 @@
 #switch1:checked ~ #controls label:nth-child(2), 
 #switch2:checked ~ #controls label:nth-child(3),
 #switch3:checked ~ #controls label:nth-child(1){ 
-	background: url('./images/1.png') no-repeat; /*заливка фона картинкой без повторений*/
+	background: url('./images/1.png') no-repeat; 
     float: right;
 	margin-right: -15%;
 	display: block;
 	height: 115%;
     width: 3.2%;
 }
-
 
 .all input{
 	display: none;
@@ -111,3 +82,16 @@
 #controls label{
     transition: opacity 0.2s ease-out;
 } 
+
+@media only screen and (min-width:1600px){
+    #overflow{ 
+        bottom: 1.5vw;
+        left: 10vw;
+    }
+}
+@media only screen and (min-width:1800px){
+    #overflow{ 
+        bottom: 3.5vw;
+        left: 12vw;
+    }
+}
