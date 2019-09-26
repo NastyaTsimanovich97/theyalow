@@ -7,7 +7,7 @@ a{
 }
 body{
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     margin: 0 auto;
 }
 
@@ -114,9 +114,14 @@ nav:hover{
 
 .player{
     z-index: 1;
+    display: flex;
+    justify-content: center;
     height: 563px;
     background-image: url("./assets/images/Layer\ 20@1X.png");
     background-size: cover;
+}
+.all{
+    padding-top: 3%;
 }
 video[poster]{
     object-fit: cover;
@@ -181,6 +186,7 @@ video[poster]{
     display: grid;
     grid-template-rows: 22% 70% 8%;
     grid-template-areas: "h2" "twits" "scroll";
+    justify-content: center;
     background-image: url("./assets/images/Layer\ 10\ copy\ 3.png");
     background-size: cover;
     -webkit-box-shadow: inset 0px 12px 16px -13px rgba(0,0,0,0.75);
@@ -188,8 +194,8 @@ video[poster]{
     box-shadow: inset 0px 12px 16px -13px rgba(0,0,0,0.75);
 }
 h2{
-    padding-top: 2.2%;
-    padding-left: 9%;
+    padding-top: 1.7%;
+    padding-left: 21%;
     word-spacing: 3px;
     grid-area: h2;
     font-size: 232%;
@@ -201,7 +207,7 @@ h2{
 .twits{
     display: flex;
     grid-area: twits;
-    padding-left: 9.1%;
+    padding-left: 21.1%;
 }
 .twitter-article{
     display: grid;
@@ -268,12 +274,12 @@ h2{
     font-weight: bold;
     vertical-align: text-top;
 }
-.slider-container {
+.scroll-container {
     width: 895px;
     grid-area: scroll;
-    padding-left: 14%;
+    padding-left: 25%;
 }
-.slider {
+.scroll {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 895px; 
@@ -286,10 +292,10 @@ h2{
     transition: opacity .2s;
 }
 /* Mouse-over effects */
-.slider:hover {
+.scroll:hover {
     opacity: 1; /* Fully shown on mouse-over */
 }
-.slider::-webkit-slider-thumb {
+.scroll::-webkit-scroll-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 197px; 
@@ -298,7 +304,7 @@ h2{
     border-radius: 20px;
     cursor: pointer; 
 }
-.slider::-moz-range-thumb {
+.scroll::-moz-range-thumb {
     width: 197px; 
     height: 15px; 
     background:#ec9e03; 
@@ -318,7 +324,7 @@ h2{
 }
 .header-devices{
     grid-area: head-dev;
-    padding-right: 8.3%;
+    padding-right: 20.3%;
     padding-top: 2.5%;
     font-size: 275%;
     color: #f5c506;
@@ -329,9 +335,6 @@ h2{
     align-items: flex-end;
     padding-bottom: 14%;
     padding-right: 5%;
-}
-.device-dekstop{
-    
 }
 .device-tablet{
     position: relative;
@@ -364,8 +367,8 @@ h2{
     width: 88%;
     padding-top: 12%;
     padding-right: 5%;
-    font-size: 148%;
-    line-height: 172%;
+    font-size: 1.4em;
+    line-height: 1.7em;
     color: #a9a9a7;
     font-family: "Open Sans", "Tahoma", sans-serif;
     font-weight: 400;

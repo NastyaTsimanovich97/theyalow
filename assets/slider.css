@@ -1,4 +1,4 @@
- .slide{
+.slide{
     display: grid;
     grid-template-areas: "video text";
     align-items: center;
