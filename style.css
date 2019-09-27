@@ -7,7 +7,6 @@ a{
 }
 body{
     width: 100%;
-    /* max-width: 1300px; */
     margin: 0 auto;
 }
 
@@ -110,6 +109,63 @@ nav:hover{
 .icon-email{
     color: #b99403;
 }
+@media only screen and (max-width:960px){
+    .navigation-menu,
+    .rectangle-shadow-1,
+    .rectangle-shadow-2 {
+        width: 90%;
+    }
+}   
+@media only screen and (max-width:745px){
+    .navigation-menu a{
+        font-size: 0.8em;
+    }
+    .navigation-menu,
+    .rectangle-shadow-1,
+    .rectangle-shadow-2 {
+        height: 36%;
+    }
+    .rectangle-shadow-1 { top: 17%;}
+    .rectangle-shadow-2 { bottom: 22%;}
+    .navigation-menu { bottom: 51%; }
+}  
+@media only screen and (max-width:650px){
+    header{
+        height: 60px;
+        grid-template-columns: 0.4fr 1fr 6fr;
+        align-content: center;
+    }
+    .logo{
+        position: relative;
+        top: 21%;
+        right: 13%;
+        height: 39px;
+        justify-self: start;
+        background-size: 40px; 
+        background-position-x: 22px;
+    }
+    h1{
+        position: relative;
+        right: 22%;
+        padding-top: 19.3%;
+        padding-left: 0;
+        font-size: 130%;
+        font-weight: 300;
+    }
+    .navigation-menu{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        grid-template-rows: 100%;
+        width: 100%;
+        height: 60px;
+    }
+    .rectangle-shadow-1{ display: none; }
+    .rectangle-shadow-2{ display: none; }
+    .navigation-menu a{ font-size: 130%; }
+    .navigation-menu li{ padding-top: 3vw; }
+    
+}  
 
 
 .player{
@@ -230,9 +286,9 @@ video[poster]{
     -moz-box-shadow: inset 0px 12px 16px -13px rgba(0,0,0,0.75);
     box-shadow: inset 0px 12px 16px -13px rgba(0,0,0,0.75);
 }
-h2{
-    padding-top: 1.7%;
-    padding-left: 21%;
+.twitter-section-header{
+    padding-top: 2.3%;
+    padding-left: 11%;
     word-spacing: 3px;
     grid-area: h2;
     font-size: 232%;
@@ -244,20 +300,21 @@ h2{
 .twits{
     display: flex;
     grid-area: twits;
-    padding-left: 21.1%;
+    padding-left: 10.8%;
 }
 .twitter-article{
     display: grid;
     grid-template-areas: "text video" "date .";
     grid-template-rows: 230px;
-    grid-template-columns: 343px 352px;
+    grid-template-columns: 62% 50%;
+    margin-right: 12%;
 }
 .video-text{
     display: grid;
     grid-template-areas: "text" "link";
     grid-area: text;
-    width: 343px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
     background-color: #EC9E03;
 }
 .video-text p{
@@ -314,7 +371,7 @@ h2{
 .scroll-container {
     width: 895px;
     grid-area: scroll;
-    padding-left: 25%;
+    padding-left: 16.5%;
 }
 .scroll {
     -webkit-appearance: none;  /* Override default CSS styles */
@@ -349,10 +406,53 @@ h2{
     cursor: pointer;
 }
 
-@media only screen and (max-width:1060px){
-    
+@media only screen and (max-width:1090px){
+    .twitter-article{
+        grid-template-columns: 55% 50%;
+        margin-right: 9%;
+    }
 }
-
+@media only screen and (max-width:990px){
+    .twitter-section-header{
+        padding-left: 21%;
+    }
+    .twits{
+        padding-left: 14.8%;
+    }
+    .twitter-article{
+        grid-template-columns: 44% 50%;
+        margin-right: 5%;
+    }
+    .video-text p{
+        font-size: 135%;
+    }
+    .twitter-video{
+        width: 300px;
+        height: 230px;
+    }
+    .twitter-logo{
+        padding-top: 15%;
+        padding-left: 7%;
+    }
+    .scroll-container {
+        width: 595px;
+        padding-left: 23.5%;
+    }
+    .scroll {
+        width: 595px; 
+    }
+    .scroll::-webkit-slider-thumb {
+        width: 167px; 
+    }
+    .scroll::-moz-range-thumb {
+        width: 167px; 
+    }
+}
+@media only screen and (max-width:760px){
+    .twits{
+        padding-left: 18.8%;
+    }
+}
 
 .other-devices{
     display: grid;
@@ -365,9 +465,13 @@ h2{
 }
 .header-devices{
     grid-area: head-dev;
-    padding-right: 20.3%;
+    padding-left: 1%;
     padding-top: 2.5%;
     font-size: 275%;
+    word-spacing: 3px;
+    font-family: 'PT Sans', "Tahoma", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
     color: #f5c506;
 }
 .images-devices{
@@ -419,6 +523,44 @@ h2{
 }
 .list-devices li {
     padding-left: 10px;
+}
+@media only screen and (max-width:990px){
+    .header-devices{
+        font-size: 220%;
+    }
+    .images-devices {
+        padding-bottom: 24%;
+        padding-right: 5%;
+    }
+    .text-devices{
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+    .device-dekstop{width: 50%;}
+    .device-tablet{width: 16%;}
+    .device-phone{width: 7%;}
+    .circle-devices{
+        width: 80px;
+        height: 80px;
+        border-radius: 58px;
+    }
+    .circle-devices pre{
+        padding-top: 38%;
+        font-size: 76%;
+    }
+}
+@media only screen and (max-width:810px){
+    .images-devices {
+        padding-bottom: 34%;
+    }
+    .circle-devices{
+        bottom: 35%;
+        left: 16%;
+    }
+    .circle-devices pre{
+        padding-top: 38%;
+        font-size: 76%;
+    }
 }
 
 
