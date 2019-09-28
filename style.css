@@ -140,17 +140,18 @@ nav:hover{
         position: relative;
         top: 21%;
         right: 13%;
-        height: 7vw;
+        height: 6vw;
+        width: 13vw;
         justify-self: start;
-        background-size: 7vw;
-        background-position-x: 18px;
+        background-size: 6vw;
+        background-position-x: 23px;
     }
     h1{
         position: relative;
         right: 22%;
         padding-top: 19.3%;
         padding-left: 0;
-        font-size: 130%;
+        font-size: 3vw;
         font-weight: 300;
     }
     .navigation-menu{
@@ -163,8 +164,8 @@ nav:hover{
     }
     .rectangle-shadow-1{ display: none; }
     .rectangle-shadow-2{ display: none; }
-    .navigation-menu a{ font-size: 1.2em; }
-    .navigation-menu li{ padding-top: 11%; }
+    .navigation-menu a{ font-size: 3vw; }
+    .navigation-menu li{ padding-top: 2.2vw; }
     .nav-services{ 
         padding-left: 1vw;
         width: 21vw;
@@ -530,7 +531,7 @@ form{
     .twits{
         flex-direction: column;
         padding-left: 1.5%;
-        padding-top: 1%;
+        padding-top: 0.8%;
         padding-right: 0;
     }
     #tweet-2{
@@ -539,11 +540,12 @@ form{
         right: 2%;
     }
     #tweet-2 .video-text{
-        width: 100.5vw;
+        width: 100.82vw;
+        height: 37vw;
         background-color: #f5c507;
     }
     .twitter-video{
-        width: 54.5vw;
+        width: 61.5vw;
         height: 36.8vw;
     }
     .twitter-logo{
@@ -561,7 +563,7 @@ form{
         line-height: 1.15em;
     }
     .video-twit{
-        padding-left: 2.7%;
+        padding-left: 0.7%;
     }
     .twitter-link{
         bottom: 2vw;
@@ -598,7 +600,7 @@ form{
         position: relative;
         bottom: 98%;
         left: 9%;
-        font-size: 0.8em;
+        font-size: 2.1vw;
         letter-spacing: 0px;
         color: #8f8e8e;
         font-family: "Arial",sans-serif;
@@ -744,7 +746,63 @@ form{
         font-size: 76%;
     }
 }
-
+@media only screen and (max-width:650px){
+    .other-devices{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 100%;
+        height: 468px;
+        background-image: url("./assets/images/Layer\ 32.png");
+    }
+    .header-devices{
+        font-size: 258%;
+        padding-top: 4.5%;
+        padding-right: 4%;
+        text-align: center;
+    }
+    .images-devices{
+        grid-area: images-dev;
+        display: flex;
+        align-items: flex-end;
+        padding-top: 12%;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+    .device-dekstop{
+        position: relative;
+        right: 9vw;
+    }
+    .device-tablet{
+        position: relative;
+        bottom: 19%;
+        right: 8vw;
+        width: 20%;
+    }
+    .device-phone{
+        position: relative;
+        bottom: 19%;
+        right: 8vw;
+        width: 6.5%;
+    }
+    .circle-devices{
+        z-index: 1;
+        position: relative;
+        bottom: 72%;
+        left: 5vw;
+        width: 18vw;
+        height: 17vw;
+        border-radius: 100%;
+        background-color: #f5c506;
+    }
+    .circle-devices pre{
+        padding-top: 7vw;
+        font-size: 2.5vw;
+    } 
+    .text-devices{
+        visibility: hidden;
+    }
+}
 
 footer{
     display: grid;
@@ -773,4 +831,17 @@ h6{
     font-weight: 300;
     color: #ffffff;
     text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+}
+@media only screen and (max-width:650px){
+    footer{
+        grid-template-columns: 1fr 5.7fr;
+        height: 45px;
+    }
+    .logo-footer{
+        width: 31px;
+    }
+    h6{
+        padding-left: 2%;
+        font-size: 110%;
+    }
 }
