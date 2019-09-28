@@ -455,6 +455,12 @@ video[poster]{
     border-radius: 20px;
     cursor: pointer;
 }
+form{
+    visibility: hidden;
+}
+.coments-tweet{
+    visibility: hidden;
+}
 
 @media only screen and (max-width:1090px){
     .twitter-article{
@@ -501,6 +507,132 @@ video[poster]{
 @media only screen and (max-width:760px){
     .twits{
         padding-left: 18.8%;
+    }
+}
+@media only screen and (max-width:650px){
+    .twitter-publication{
+        width: 100%;
+        height: 490px;
+        grid-template-areas: "twits";
+        justify-content: start;
+        background: #ffffff;
+        -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.75);
+    }
+    .twitter-article{
+        display: flex;
+        margin-right: 0;
+    }
+    .twitter-section-header{
+        display: none;
+    }
+    .twits{
+        flex-direction: column;
+        padding-left: 1.5%;
+        padding-top: 1%;
+        padding-right: 0;
+    }
+    #tweet-2{
+        position: relative;
+        top: 4%;
+        right: 2%;
+    }
+    #tweet-2 .video-text{
+        width: 100.5vw;
+        background-color: #f5c507;
+    }
+    .twitter-video{
+        width: 54.5vw;
+        height: 36.8vw;
+    }
+    .twitter-logo{
+        width: 25vw;
+        padding-top: 5.5%;
+        padding-left: 5%;
+    }
+    .video-text {
+        width: 46vw;
+        height: 36.8vw;
+    }
+    .video-text p {
+        padding-top: 3%;
+        font-size: 4.9vw;
+        line-height: 1.15em;
+    }
+    .video-twit{
+        padding-left: 2.7%;
+    }
+    .twitter-link{
+        bottom: 2vw;
+    }
+    .scroll-container {
+        display: none;
+    }
+    .date{
+        display: none;
+    }
+    .number{
+        display: none;
+    }
+    .tweet-link-2{
+        display: none;
+    }
+
+    .coments-tweet{
+        visibility: visible;
+        position: relative;
+        right: 34%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .coment-tweet{
+        height: 42px;
+    }
+    .coments-tweet img{
+        width: 43.6vw;
+    }
+    .text,
+    .author{
+        position: relative;
+        bottom: 98%;
+        left: 9%;
+        font-size: 0.8em;
+        letter-spacing: 0px;
+        color: #8f8e8e;
+        font-family: "Arial",sans-serif;
+    }
+    .tweet-form{
+        visibility: visible;
+        position: relative;
+        left: 2%;
+   }
+    .tweet-form-input{
+        width: 31vw;
+        height: 30px;
+        border-radius: 12px 0 0 12px;
+        border: 1px solid #d3910e;
+        font-family: "Arial",sans-serif;
+        -webkit-box-shadow: inset 5px 4px 21px -5px rgba(0,0,0,0.2);
+        -moz-box-shadow: inset 5px 4px 21px -5px rgba(0,0,0,0.2);
+        box-shadow: inset 5px 4px 21px -5px rgba(0,0,0,0.2);
+    }
+    .tweet-form-button{
+        position: relative;
+        right: 2%;
+        width: 11vw;
+        height: 31px;
+        border-radius: 0 10px 10px 0;
+        border: 1px solid #d3910e;
+        background: #d3910e;
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-family: "Arial",sans-serif;
+        -webkit-box-shadow: inset 4px 0px 46px 7px rgba(255,255,255,0.2);
+        -moz-box-shadow: inset 4px 0px 46px 7px rgba(255,255,255,0.2);
+        box-shadow: inset 4px 0px 46px 7px rgba(255,255,255,0.2);
     }
 }
 
