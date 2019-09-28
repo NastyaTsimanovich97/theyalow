@@ -134,6 +134,7 @@ nav:hover{
         height: 9.5vw;
         grid-template-columns: 0.4fr 1fr 6fr;
         align-content: center;
+        background-image: url("./assets/images/Layer\ 26.png");
     }
     .logo{
         position: relative;
@@ -286,6 +287,39 @@ video[poster]{
 .telegram p{
     padding-top: 2%;
     padding-right: 6%;
+}
+@media only screen and (max-width:650px){
+    .links{
+        height: 175px;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    }
+    .better-design,
+    .customise,
+    .telegram{
+        border: 0;
+    }
+    .links p{
+        font-size: 150%;
+    }
+    .better-design img{
+        width: 89px;
+        padding-top: 14%;
+    }
+    .customise img{
+        width: 68px;
+        padding-top: 7%;
+        padding-left: 5%;
+    }
+    .telegram img{
+        width: 68px;
+        padding-top: 10%;
+        padding-right: 9%;
+    }
+    .customise p {
+        padding-top: 0;
+    }
 }
 
 
