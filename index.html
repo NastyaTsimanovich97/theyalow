@@ -22,14 +22,14 @@
             <div class="rectangle-shadow-2"></div>
             <ul class="navigation-menu">
                 <li class="nav-about-us"><a href="#about"><img class="icon-user" src="./assets/images/man-user.svg" alt="user"> ABOUT US</a></li>
-                <li class="nav-services"><a href=""><img class="icon-service" src="./assets/images/tool.svg" alt="tool"> SERVICES</a></li>
-                <li class="nav-contact"><a href=""><img class="icon-email" src="./assets/images/close-envelope.svg" alt="mail"> CONTACT</a></li>
+                <li class="nav-services"><a href="#services"><img class="icon-service" src="./assets/images/tool.svg" alt="tool"> SERVICES</a></li>
+                <li class="nav-contact"><a href="#contact"><img class="icon-email" src="./assets/images/close-envelope.svg" alt="mail"> CONTACT</a></li>
             </ul>
             
         </nav>
     </header>
     <main>
-        <section class="player">
+        <section class="player" id="about">
             <div class="all">
                 <input checked type="radio" name="respond" id="desktop">
                     <article id="slider">
@@ -82,9 +82,9 @@
                     </article>
             </div>  
         </section>
-        <section class="links" id="about">
-            <div class="links-shadow-1"></div>
-            <div class="links-shadow-2"></div>
+        <section class="links" id="services">
+                <div class="links-shadow-1"></div>
+                <div class="links-shadow-2"></div>
             <article class="better-design">
                 <img src="./assets/images/Shape 2.svg" alt="design" width="109" height="74">
                 <p>BETTER DESIGN</p>
@@ -108,10 +108,9 @@
                     </div>
                     <div class="video-twit">
                         <video class="twitter-video" poster="./assets/images/Layer 25.png" width="380px" height="230px"></video>
-                        <label class="label-play-button-2" for="play-button"><img src="./assets/images/play-button.svg" alt="" width="61"></label>
-                        <input id="play-button" type="button" name="play-button">
                     </div>
-                    
+                    <label class="label-play-button-2" for="play-button"><img src="./assets/images/play-button.svg" alt="" width="61"></label>
+                    <input id="play-button" type="button" name="play-button">
                     <time class="date" datetime="04-25"><span class="day">25</span><br> APRIL</time>
                 </article>
                 <article class="twitter-article" id="tweet-2">
@@ -147,7 +146,7 @@
                 <input class="scroll" id="range" type="range" min="1" max="100">
             </div>
         </section>
-        <section class="other-devices">
+        <section class="other-devices" id="contact">
             <h2 class="header-devices">Lorem ipsum dolor sit amet</h2>
             <section class="images-devices">
                 <div class="circle-devices"><pre>ITS 100% FREE</pre></div>
@@ -165,7 +164,6 @@
             </section>
             
         </section>
-
     </main>
     <footer>
         <img class="logo-footer" src="./assets/images/Shape 8 copy 3.svg" alt="logo" width="54">

@@ -264,6 +264,12 @@ video[poster]{
     .player-text{
         visibility: hidden;
     }
+    .label-play-button {
+        position: relative;
+        bottom: 0;
+        left: -49vw;
+        opacity: 0.87;
+    }
 }
 
 
@@ -317,9 +323,16 @@ video[poster]{
     padding-top: 2%;
     padding-right: 6%;
 }
+.links-shadow-1{
+    visibility: hidden;
+}
+.links-shadow-2{
+    visibility: hidden;
+}
+
 @media only screen and (max-width:650px){
     .links{
-        height: 175px;
+        height: 180px;
         -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
@@ -327,6 +340,7 @@ video[poster]{
     .better-design,
     .customise,
     .telegram{
+        z-index: 1;
         border: 0;
     }
     .links p{
@@ -348,6 +362,14 @@ video[poster]{
     }
     .customise p {
         padding-top: 0;
+    }
+    .links-shadow-1{
+        position: absolute;
+        visibility: visible;
+        background-image: url(./assets/images/Layer\ 27.png);
+        width: 100%;
+        height: 180px;
+        top: 58%;
     }
 }
 
@@ -675,6 +697,13 @@ form{
         -webkit-box-shadow: inset 4px 0px 46px 7px rgba(255,255,255,0.2);
         -moz-box-shadow: inset 4px 0px 46px 7px rgba(255,255,255,0.2);
         box-shadow: inset 4px 0px 46px 7px rgba(255,255,255,0.2);
+    }
+    .label-play-button-2 {
+        position: relative;
+        bottom: 0;
+        left: -41vw;
+        top: 14vw;
+        opacity: 0.85;
     }
 }
 
