@@ -29,12 +29,12 @@
 #switch1:checked ~ #controls label:nth-child(3), 
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2){
-    background: url('./images/2.png') no-repeat; 
+    background: url(./images/2.png) no-repeat;
     float: left;
-	margin-left: -15%;
-	display: block;
-	height: 115%;
-    width: 3.2%;
+    margin-left: -15%;
+    display: block;
+    height: 54px;
+    width: 33px;
 }
 
 /*настройка переключения и положения для правой стрелки*/
@@ -45,8 +45,8 @@
     float: right;
 	margin-right: -15%;
 	display: block;
-	height: 115%;
-    width: 3.2%;
+    height: 54px;
+    width: 33px;
 }
 
 .all input{
@@ -81,7 +81,14 @@
 
 #controls label{
     transition: opacity 0.2s ease-out;
-} 
+}
+
+@media only screen and (min-width:1800px){
+    #overflow{ 
+        bottom: 3.5vw;
+        left: 12vw;
+    }
+}
 
 @media only screen and (min-width:1600px){
     #overflow{ 
@@ -89,11 +96,13 @@
         left: 10vw;
     }
 }
-@media only screen and (min-width:1800px){
-    #overflow{ 
-        bottom: 3.5vw;
-        left: 12vw;
-    }
+
+@media only screen and (max-width:1200px){
+	#switch1:checked ~ #controls label:nth-child(2), 
+	#switch2:checked ~ #controls label:nth-child(3),
+	#switch3:checked ~ #controls label:nth-child(1){ 
+	margin-right: -10vw;
+}
 }
 @media only screen and (max-width:650px){
     #slider{
