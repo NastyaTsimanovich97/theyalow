@@ -543,14 +543,10 @@ form{
         margin-right: 5%;
     }
     .video-text p{
-        font-size: 135%;
-    }
-    .twitter-video{
-        width: 300px;
-        height: 230px;
+        font-size: 1.8vw;
     }
     .twitter-logo{
-        padding-top: 15%;
+        padding-top: 2vw;
         padding-left: 7%;
     }
     .scroll-container {
