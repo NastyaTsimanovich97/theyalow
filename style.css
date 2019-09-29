@@ -241,7 +241,9 @@ video[poster]{
     left: 20vw;
     opacity: 0.87;
 }
-
+.label-play-button:hover{
+    opacity: 0.4;
+}
 
 @media only screen and (max-width:1170px){
     .player-text{
@@ -329,6 +331,12 @@ video[poster]{
 .links-shadow-2{
     visibility: hidden;
 }
+.better-design:hover,
+.customise:hover,
+.telegram:hover{
+    background: #f5c50667;
+}
+
 
 @media only screen and (max-width:650px){
     .links{
@@ -524,6 +532,9 @@ form{
 .coments-tweet{
     visibility: hidden;
 }
+.label-play-button-2:hover{
+    opacity: 0.4;
+}
 
 @media only screen and (max-width:1090px){
     .twitter-article{
@@ -701,6 +712,7 @@ form{
         top: 14vw;
         opacity: 0.85;
     }
+   
 }
 
 .other-devices{
