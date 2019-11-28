@@ -91,19 +91,20 @@ h1{
 }
 .nav-services{
     grid-area: nav-services;
-    width: 80%;
+    width: 83%;
     padding-left: 15%;
     border-right: 1px solid #B99403;
 }
 .nav-contact{
     grid-area: nav-contact;
     justify-self: center;
-    width: 100%;
+    width: 90%;
+    padding-left: 11.9%;
 }
-nav:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.2);
+.nav-about-us:hover,
+.nav-services:hover,
+.nav-contact:hover{
+    background-color: #ffd106d4;
 }
 .icon-user,
 .icon-service,
