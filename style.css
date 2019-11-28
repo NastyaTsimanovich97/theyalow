@@ -414,15 +414,16 @@ video[poster]{
 }
 .twitter-article{
     display: grid;
-    grid-template-areas: "text video" "date .";
+    grid-template-areas: "video-text video" "date .";
     grid-template-rows: 17.8vw;
     grid-template-columns: 62% 50%;
     margin-right: 12%;
 }
+
 .video-text{
     display: grid;
     grid-template-areas: "text" "link";
-    grid-area: text;
+    grid-area: video-text;
     width: 100%;
     height: 17.8vw;
     background-color: #EC9E03;
@@ -583,7 +584,7 @@ form{
 @media only screen and (max-width:650px){
     .twitter-publication{
         width: 100%;
-        height: 490px;
+        height: 76.6vw;
         grid-template-areas: "twits";
         justify-content: start;
         background: #ffffff;
@@ -660,7 +661,7 @@ form{
         justify-content: space-evenly;
     }
     .coment-tweet{
-        height: 42px;
+        height: 7vw;
     }
     .coments-tweet img{
         width: 43.6vw;
@@ -712,8 +713,13 @@ form{
         left: -41vw;
         top: 14vw;
         opacity: 0.85;
+    } 
+}
+@media only screen and (max-width:450px){
+    .text,
+    .author{
+        bottom: 124%;
     }
-   
 }
 
 .other-devices{
